@@ -14,17 +14,19 @@
   </head>
   <body>
     <!-- -------------------------------- Scroll --------------------------------- -->
+
     <a href="" class="scrolltop" id="scroll-top">
       <i class="bx bxs-chevron-up scrolltop__icon"></i>
     </a>
+
     <!-- -------------------------------- Header --------------------------------- -->
 
     <header class="l-header scroll-header" id="header">
       <nav class="nav bd-container">
-        <a href="" class="nav__logo">SGP</a>
+        <a href="#" class="nav__logo">SGP</a>
 
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav_list">
+          <ul class="nav__list">
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">Home</a>
             </li>
@@ -48,13 +50,23 @@
         </div>
       </nav>
     </header>
-    <main>
+
+    <main class="l-main">
+      <!-- -------------------------------- Home --------------------------------- -->
+
       <section class="home" id="home">
-        <div class="home__container bg-container bg-grid">
+        <div class="home__container bd-container bd-grid">
           <div class="home__data">
-            <span class="home__greeting">Hello, I'm <span class="">Samuel Gooch</span></span>
-            <h1 class="home__name">I help people reach their full potential</h1>
-            <span class="home__profession">My therapeutic style allows me to help you become more aware of your feelings </span>
+            <span class="home__greeting"
+              >Hello, I'm <span class="">Samuel Gooch</span></span
+            >
+            <h1 class="home__name">
+              I help people reach their full potential.
+            </h1>
+            <span class="home__profession"
+              >My therapeutic style allows me to help you become more aware of
+              your feelings
+            </span>
             <a href="#contact" class="button">Book a free consultation</a>
           </div>
 
@@ -63,14 +75,78 @@
         </div> -->
 
           <div class="home__img">
-            <img src="" alt="" class="" />
+            <!-- <img src="assets/images/about-me.jpg"/> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------------------- About --------------------------------- -->
+
+      <section class="about section bd-container" id="about">
+        <span class="section-subtitle">My history</span>
+        <h2 class="section-title">About me</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__data bd-grid">
+            <p class="about__description">
+              <span>Hello, I am<br /></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+              temporibus!
+            </p>
+
+            <div>
+              <span class="about__number">05</span>
+              <span class="about__achievement">Years of Experience</span>
+            </div>
+
+            <div>
+              <span class="about__number">29+</span>
+              <span class="about__achievement">Projects</span>
+            </div>
+
+            <div>
+              <span class="about__number">07</span>
+              <span class="about__achievement">Best work award</span>
+            </div>
+          </div>
+
+          <img src="assets/images/about-me.jpg" alt="" class="about__img" />
+        </div>
+      </section>
+
+      <!-- -------------------------------- Services --------------------------------- -->
+
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">What I offer</span>
+        <h2 class="section-title">Services</h2>
+
+        <div class="services__container bd-grid">
+          <div class="services__data">
+            <i class="bx bx-palette services__icon"></i>
+            <h3 class="services__title">ABC</h3>
+            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
+            <a href="#" class="button">Learn more</a>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-laptop services__icon"></i>
+            <h3 class="services__title">DEF</h3>
+            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
+            <a href="#" class="button">Learn more</a>
+          </div>
+
+          <div class="services__data">
+            <i class="bx bx-pen services__icon"></i>
+            <h3 class="services__title">GHI</h3>
+            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
+            <a href="#" class="button">Learn more</a>
           </div>
         </div>
       </section>
     </main>
 
     <!-- -------------------------------- FAQ --------------------------------- -->
-    <!-- <div class="faq-section">
+    <!-- <section class="faq-section">
       <div class="accordion">
         <div class="accordion-item">
           <button id="accordion-button-1" aria-expanded="false">
@@ -144,7 +220,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </section> -->
 
     <!-- -------------------------------- Footer --------------------------------- -->
 

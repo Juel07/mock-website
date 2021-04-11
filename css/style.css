@@ -53,7 +53,6 @@ body {
   font-weight: var(--font-medium);
   background-color: var(--background-color);
   color: var(--text-color);
-  display: flex;
   min-height: 100vh;
   line-height: 1.6;
 }
@@ -72,7 +71,7 @@ a {
 }
 
 ul {
-  /* padding: 0; */
+  padding: 0;
   list-style: none;
 }
 
@@ -81,18 +80,19 @@ img {
   height: auto;
   display: block;
 }
+/* -------------------------------- Common styles --------------------------------- */
 
 .section {
   padding: 4rem 0 2rem;
 }
 
 .section-title, .section-subtitle {
-  text-align: center;
+  text-align: left;
 }
 
 .section-title {
   font-size: var(--h1-font-size);
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: var(--mb-3);
 }
 
@@ -102,12 +102,12 @@ img {
   font-weight: var(--font-semi-bold);
 }
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   main {
     padding-left: var(--mb-2);
     padding-right: var(--mb-2);
   }
-}
+} */
 
 /* -------------------------------- Layout --------------------------------- */
 .bd-container {
@@ -158,12 +158,12 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-.nav_link {
+.nav__link {
   color: var(--text-color);
   transition: .3s;
 }
 
-.nav_link:hover {
+.nav__link:hover {
   color: var(--secondary-color);
 }
 
@@ -178,18 +178,18 @@ img {
 
 /* -------------------------------- Menu --------------------------------- */
 
-.show-menu { /* toggle class for nav */
+.show-menu { /* toggle class for menu */
   top: var(--header-height);
 }
 
-.active-link {
+.active-link { /* active menu links */
   position: relative;
 }
 
 .active-link::after {
   content: '';
   position: absolute;
-  bottom: - .7rem;
+  bottom: -.7rem;
   left: 0;
   width: 65%;
   height: 3px;
@@ -198,7 +198,7 @@ img {
 /* -------------------------------- change bg header --------------------------------- */
 
 .scroll-header {
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
 }
 
@@ -248,9 +248,8 @@ img {
 
 .home__container{
   position: relative;
-  /* margin-left:var(--mb-2) ; */
   height: calc(100vh - var(--header-height));
-  grid-template-rows: repeat(2, max-conten);
+  grid-template-rows: repeat(2, max-content);
   align-content: space-around;
   row-gap: 2rem;
 }
@@ -273,6 +272,7 @@ img {
 }
 
 .home__profession {
+  display: block;
   font-size: .938rem;
   margin-bottom: var(--mb-3);
 }
@@ -295,6 +295,8 @@ img {
 .home__social-icon{
   width: max-content;
   font-size: var(--icon-font-sm-size);
+  margin-bottom: var(--mb-2);
+  color: var(--text-color);
 }
 
 .home__social-icon:hover{
@@ -313,16 +315,60 @@ img {
 }
 
 .button:hover{
-  background-color: var(--primary-color);
+  background-color: transparent;
   border: 2px solid var(--secondary-color);
   color: var(--secondary-color);
 }
 
 /* -------------------------------- about --------------------------------- */
+.about__data{
+  text-align: center;
+}
 
+.about__description span{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color);
+}
+
+.about__number{
+  font-size: var(--h1-font-size)
+}
+
+.about__img{
+  justify-self: center;
+  width:220px;
+  border-radius: .5rem;
+}
 
 /* -------------------------------- services --------------------------------- */
+.services__data{
+  padding: 3rem 1rem;
+  background-color: var(--background-color);
+  border-radius: .5rem;
+  text-align: center;
+  transition: .4s;
+  box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
 
+.services__icon, .services__title{
+margin-bottom: var(--mb-2);
+color: var(--secondary-color);
+}
+.services__icon{
+  font-size: var(--icon-font-sm-size);
+}
+.services__title{
+  font-size: var(--h3-font-size);
+}
+.services__description{
+  margin-bottom: var(--mb-4);
+}
+.services__data:hover{
+  transform: translateY(-.5rem);
+  box-shadow: 0 6px 8px rgba(0,0,0, 0.1);
+}
+/* -------------------------------- testimonials --------------------------------- */
 
 /* -------------------------------- FAQ --------------------------------- */
 .faq-section {
@@ -418,6 +464,13 @@ img {
   font-weight: 300;
   margin: 2em 0;
 }
+/* -------------------------------- contact --------------------------------- */
+
+
+/* -------------------------------- footer --------------------------------- */
+
+
+/* -------------------------------- media queries --------------------------------- */
 
 @media screen and (min-width: 768px) {
   :root {

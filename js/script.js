@@ -1,4 +1,4 @@
-// display menu
+// reveal mobile menu
 const toggleMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId)
   const nav = document.getElementById(navId)
@@ -9,7 +9,6 @@ const toggleMenu = (toggleId, navId) => {
     })
   }
 }
-
 toggleMenu('nav-toggle', 'nav-menu')
 
 // remove mobile menu
@@ -21,7 +20,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-// active link for scroll
+// indicate active link when scrolling
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive() {
@@ -32,9 +31,9 @@ function scrollActive() {
     sectionId = current.getAttribute('id')
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelectorAll('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
     } else {
-      document.querySelectorAll('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
 
     }
   })
@@ -45,7 +44,7 @@ window.addEventListener('scroll', scrollActive)
 function scrollHeader() {
   const header = document.getElementById('header')
 
-  if(this.scrollY >= 200 ) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+  if (this.scrollY >= 200) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -53,7 +52,7 @@ window.addEventListener('scroll', scrollHeader)
 function scrollTop() {
   const scrollTop = document.getElementById('scroll-top')
 
-  if(this.scrollY >= 560 ) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+  if (this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
 
