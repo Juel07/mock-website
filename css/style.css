@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --header-height: 3rem;
+  --primary-color: #F7F3EA;
+  --text-color: #333333;
+  --secondary-color: #1C527E;
+  --background-color: #FDFDFD;
+
+  --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  --icon-font-sm-size: 1.3rem;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, ul, p {
+  margin: 0;
+}
+
+h2, h3 {
+  font-weight: var(--font-semi-bold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+ul {
+  /* padding: 0; */
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.section-title, .section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--primary-color);
+  margin-bottom: var(--mb-3);
+}
+
+.section-subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+@media screen and (max-width: 768px){
+  main {
+    padding-left: var(--mb-2);
+    padding-right: var(--mb-2);
+  }
+}
+
+/* -------------------------------- Layout --------------------------------- */
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index: var(--z-fixed);
+  background-color: var(--primary-color);
+}
+
+/* -------------------------------- Nav --------------------------------- */
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px){
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: var(--primary-color) ;
+    transition: .4s;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+
+.nav__item {
+  margin-bottom: var(--mb-3);
+}
+
+.nav_link {
+  color: var(--text-color);
+  transition: .3s;
+}
+
+.nav_link:hover {
+  color: var(--secondary-color);
+}
+
+.nav__logo, .nav__toggle {
+  color: var(--secondary-color);
+}
+
+.nav__toggle {
+  font-size: var(--icon-font-sm-size);
+  cursor: pointer;
+}
+
+/* -------------------------------- Menu --------------------------------- */
+
+.show-menu { /* toggle class for nav */
+  top: var(--header-height);
+}
+
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+  position: absolute;
+  bottom: - .7rem;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+/* -------------------------------- change bg header --------------------------------- */
+
+.scroll-header {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+}
+
+.scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav_link {
+  color: var(--secondary-color);
+}
+
+.scroll-header .nav__menu {
+  background-color:var(--background-color) ;
+}
+
+/* -------------------------------- Scroll to top --------------------------------- */
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  background: #33333355;
+  border-radius: .5rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  visibility: hidden;
+}
+
+/* .scrolltop:hover {
+  background: var(--text-color);
+} */
+
+.scrolltop__icon{
+  font-size: 2rem;
+  color: var(--background-color);
+}
+
+.show-scroll { /* show scroll button*/
+  visibility: visible;
+  bottom: 1.5rem;
+}
+/* -------------------------------- home --------------------------------- */
+
+.home{
+  background: var(--primary-color);
+  overflow: hidden;
+}
+
+.home__container{
+  position: relative;
+  /* margin-left:var(--mb-2) ; */
+  height: calc(100vh - var(--header-height));
+  grid-template-rows: repeat(2, max-conten);
+  align-content: space-around;
+  row-gap: 2rem;
+}
+
+.home__data{
+  border-left: 4px solid var(--secondary-color);
+  color: var(--text-color);
+  padding-left: 1.5rem;
+  z-index: var(--z-tooltip);
+}
+.home__greeting {
+  display: block;
+  font-size: .813rem;
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+}
+
+.home__name {
+  font-size: var(--biggest-font-size);
+}
+
+.home__profession {
+  font-size: .938rem;
+  margin-bottom: var(--mb-3);
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home__img img {
+  width: 240px;
+}
+
+.home__social{
+  display: flex;
+  flex-direction: column;
+}
+
+.home__social-icon{
+  width: max-content;
+  font-size: var(--icon-font-sm-size);
+}
+
+.home__social-icon:hover{
+  transform: scale();
+}
+
+/* -------------------------------- buttons --------------------------------- */
+.button{
+  display:inline-block;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  padding: .75rem 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: .25rem;
+  transition: .3s;
+}
+
+.button:hover{
+  background-color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+/* -------------------------------- about --------------------------------- */
+
+
+/* -------------------------------- services --------------------------------- */
+
+
+/* -------------------------------- FAQ --------------------------------- */
+.faq-section {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: var(--h3-font-size);
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 0.1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
