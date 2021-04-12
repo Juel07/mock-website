@@ -70,9 +70,9 @@
           <a href="" class="home__social-icon"><i class=""></i></a>
         </div> -->
 
-        <div class="home__img">
-          <!-- <img src="assets/images/about-me.jpg"/> -->
-        </div>
+        <!-- <div class="home__img">
+          <img src="assets/images/about-me.jpg"/>
+        </div> -->
       </div>
     </section>
 
@@ -178,11 +178,47 @@
       </div>
     </section>
 
+    <!-- -------------------------------- FAQ --------------------------------- -->
+
+    <section class="faqs section bd-container" id='faqs'>
+      <span class="section-subtitle">Frequently asked questions</span>
+      <h2 class="section-title">FAQs</h2>
+
+      <div class="faq__container bd-grid">
+
+        <div class="accordion">
+          <div class="faq__item">
+            <button id="" aria-expanded="false">
+              <p class="faq__title">When should I arrive for my appointment?</p><span class="faq__icon"
+                aria-hidden="true"></span>
+            </button>
+            <div class="faq__content">
+              <p class="faq__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button id="" aria-expanded="false">
+              <p class="faq__title">What is your cancellation policy?</p><span class="faq__icon"
+                aria-hidden="true"></span>
+            </button>
+            <div class="faq__content">
+              <p class="faq__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <!-- -------------------------------- Contact --------------------------------- -->
 
     <section class="contact section bd-container" id='contact'>
       <span class="section-subtitle">Get in touch</span>
       <h2 class="section-title">Contact me</h2>
+      <p>Schedule a free 15 minute consultation with me.</p>
 
       <div class="contact bd-grid">
         <div class="contact__content bd-grid">
@@ -218,80 +254,34 @@
 
         <form action="" class="contact__form">
           <div class="contact__inputs">
-            <input type="text" placeholder="" class="contact__input">
+            <input type="text" placeholder="Name*" class="contact__input" required>
+            <input type="text" placeholder="Email*" class="contact__input" required>
           </div>
+          <div class="contact__inputs">
+            <!-- <input type="number" placeholder="Phone*" class="contact__input"> -->
+            <input type="text" placeholder="Subject" class="contact__input" required>
+          </div>
+          <textarea name="" id="" cols="0" rows="7" placeholder="Message*" class="contact__input" required></textarea>
+
+          <input type="submit" value="Send Message" class="button contact__button">
+
         </form>
-
-
       </div>
     </section>
-
-
   </main>
 
-  <!-- -------------------------------- FAQ --------------------------------- -->
-
-  <section class="faqs section bd-container" id='faqs'>
-    <span class="section-subtitle">Have a question?</span>
-    <h2 class="section-title">FAQs</h2>
-
-    <div class="faq__container bd-grid">
-
-      <div class="accordion">
-        <div class="faq__item">
-          <button id="" aria-expanded="false">
-            <p class="faq__title">Why is the moon sometimes out during the day?</p><span class="faq__icon"
-              aria-hidden="true"></span>
-          </button>
-          <div class="faq__content">
-            <p class="faq__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-              suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <div class="faq__item">
-          <button id="" aria-expanded="false">
-            <p class="faq__title">Why is the moon sometimes out during the day?</p><span class="faq__icon"
-              aria-hidden="true"></span>
-          </button>
-          <div class="faq__content">
-            <p class="faq__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-              suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <!-- <div class="accordion-item">
-          <button id="accordion-button-2" aria-expanded="false">
-            <span class="accordion-title">Why is the sky blue?</span
-            ><span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p class="faq__description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-              suspendisse potenti.
-            </p>
-          </div>
-        </div> -->
-
-
-      </div>
-
-
-  </section>
-
-  <!-- <section class="faq-section">
-
-    </section> -->
-
   <!-- -------------------------------- Footer --------------------------------- -->
+
+  <footer>
+    <div class="footer__container bd-container">
+      <h1 class="footer__title">Samuel Jo</h1>
+      <p class="footer__description">I am a licensed psychotherapist based in Liverpool</p>
+      <span class="footer__email"><a href="mailto:info@hotmail.co.uk">info@hotmail.co.uk</a></span>
+    </div>
+
+    <!-- <div class="footer__social"></div> -->
+    <p class="footer__copy">© <span>2021</span> Website by <a href='www.juelbraganza.io'>Juel Braganza</a></p>
+  </footer>
 
   <!-- Mixitup Filter -->
   <script src=""></script>
