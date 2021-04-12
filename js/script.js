@@ -56,6 +56,29 @@ function scrollTop() {
 }
 window.addEventListener('scroll', scrollTop)
 
+// swiper carousel
+const swiper = new Swiper('.testimonial__container', {
+
+  spaceBetween: 16,
+  loop: true,
+  grabCursor: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    // dynamicBullets: true,
+  },
+  breapoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  }
+
+});
+
 // accordion
 
 const items = document.querySelectorAll(".accordion button");

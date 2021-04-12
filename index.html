@@ -1,161 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- -------------------------------- Scroll --------------------------------- -->
 
-    <a href="" class="scrolltop" id="scroll-top">
-      <i class="bx bxs-chevron-up scrolltop__icon"></i>
-    </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" type="text/css" />
+  <title>Mock website</title>
+</head>
 
-    <!-- -------------------------------- Header --------------------------------- -->
+<body>
+  <!-- -------------------------------- Scroll --------------------------------- -->
 
-    <header class="l-header scroll-header" id="header">
-      <nav class="nav bd-container">
-        <a href="#" class="nav__logo">SGP</a>
+  <a href="" class="scrolltop" id="scroll-top">
+    <i class="bx bxs-chevron-up scrolltop__icon"></i>
+  </a>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#services" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="#faqs" class="nav__link">FAQs</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
+  <!-- -------------------------------- Header --------------------------------- -->
+
+  <header class="l-header scroll-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">SGP</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#faqs" class="nav__link">FAQs</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!-- -------------------------------- Home --------------------------------- -->
+
+    <section class="home" id="home">
+      <div class="home__container bd-container bd-grid">
+        <div class="home__data">
+          <span class="home__greeting">Hello, I'm <span class="">Samuel Gooch</span></span>
+          <h1 class="home__name">
+            I help people reach their full potential.
+          </h1>
+          <span class="home__profession">My therapeutic style allows me to help you become more aware of
+            your feelings
+          </span>
+          <a href="#contact" class="button">Book a free consultation</a>
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!-- -------------------------------- Home --------------------------------- -->
-
-      <section class="home" id="home">
-        <div class="home__container bd-container bd-grid">
-          <div class="home__data">
-            <span class="home__greeting"
-              >Hello, I'm <span class="">Samuel Gooch</span></span
-            >
-            <h1 class="home__name">
-              I help people reach their full potential.
-            </h1>
-            <span class="home__profession"
-              >My therapeutic style allows me to help you become more aware of
-              your feelings
-            </span>
-            <a href="#contact" class="button">Book a free consultation</a>
-          </div>
-
-          <!-- <div class="home__social">
+        <!-- <div class="home__social">
           <a href="" class="home__social-icon"><i class=""></i></a>
         </div> -->
 
-          <div class="home__img">
-            <!-- <img src="assets/images/about-me.jpg"/> -->
+        <div class="home__img">
+          <!-- <img src="assets/images/about-me.jpg"/> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------- About --------------------------------- -->
+
+    <section class="about section bd-container" id="about">
+      <span class="section-subtitle">My history</span>
+      <h2 class="section-title">About me</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__data bd-grid">
+          <p class="about__description">
+            <span>Hello, I am<br /></span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            temporibus!
+          </p>
+
+          <div>
+            <span class="about__number">05</span>
+            <span class="about__achievement">Years of Experience</span>
+          </div>
+
+          <div>
+            <span class="about__number">29+</span>
+            <span class="about__achievement">Projects</span>
+          </div>
+
+          <div>
+            <span class="about__number">07</span>
+            <span class="about__achievement">Best work award</span>
           </div>
         </div>
-      </section>
 
-      <!-- -------------------------------- About --------------------------------- -->
+        <img src="assets/images/about-me.jpg" alt="" class="about__img" />
+      </div>
+    </section>
 
-      <section class="about section bd-container" id="about">
-        <span class="section-subtitle">My history</span>
-        <h2 class="section-title">About me</h2>
+    <!-- -------------------------------- Services --------------------------------- -->
 
-        <div class="about__container bd-grid">
-          <div class="about__data bd-grid">
-            <p class="about__description">
-              <span>Hello, I am<br /></span>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-              temporibus!
+    <section class="services section bd-container" id="services">
+      <span class="section-subtitle">What I offer</span>
+      <h2 class="section-title">Services</h2>
+
+      <div class="services__container bd-grid">
+        <div class="services__data">
+          <i class="bx bx-palette services__icon"></i>
+          <h3 class="services__title">ABC</h3>
+          <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
+          <a href="#" class="button">Learn more</a>
+        </div>
+
+        <div class="services__data">
+          <i class="bx bx-laptop services__icon"></i>
+          <h3 class="services__title">DEF</h3>
+          <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
+          <a href="#" class="button">Learn more</a>
+        </div>
+
+        <div class="services__data">
+          <i class="bx bx-pen services__icon"></i>
+          <h3 class="services__title">GHI</h3>
+          <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
+          <a href="#" class="button">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------- Testimonials --------------------------------- -->
+
+    <section class="testimonial section bd-container">
+      <span class="section-subtitle">What my clients say</span>
+      <h2 class="section-title">Testimonials</h2>
+
+      <div class="testimonial__container swiper-container">
+        <div class="swiper-wrapper">
+
+          <div class="testimonial__content swiper-slide">
+            <img src="" alt="" class="testimonial__img">
+            <h3 class="testimonial__title">Holly</h3>
+            <span class="testimonial__client">Client 1</span>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, nulla!
             </p>
-
-            <div>
-              <span class="about__number">05</span>
-              <span class="about__achievement">Years of Experience</span>
-            </div>
-
-            <div>
-              <span class="about__number">29+</span>
-              <span class="about__achievement">Projects</span>
-            </div>
-
-            <div>
-              <span class="about__number">07</span>
-              <span class="about__achievement">Best work award</span>
-            </div>
           </div>
 
-          <img src="assets/images/about-me.jpg" alt="" class="about__img" />
+          <div class="testimonial__content swiper-slide">
+            <img src="" alt="" class="testimonial__img">
+            <h3 class="testimonial__title">Jenny</h3>
+            <span class="testimonial__client">Client 2</span>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div class="testimonial__content swiper-slide">
+            <img src="" alt="" class="testimonial__img">
+            <h3 class="testimonial__title">Richard</h3>
+            <span class="testimonial__client">Client 3</span>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet.</p>
+          </div>
+
         </div>
-      </section>
 
-      <!-- -------------------------------- Services --------------------------------- -->
+        <div class="swiper-pagination"></div>
 
-      <section class="services section bd-container" id="services">
-        <span class="section-subtitle">What I offer</span>
-        <h2 class="section-title">Services</h2>
+      </div>
+    </section>
 
-        <div class="services__container bd-grid">
-          <div class="services__data">
-            <i class="bx bx-palette services__icon"></i>
-            <h3 class="services__title">ABC</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
-            <a href="#" class="button">Learn more</a>
+    <!-- -------------------------------- Contact --------------------------------- -->
+
+    <section class="contact section bd-container" id='contact'>
+      <span class="section-subtitle">Get in touch</span>
+      <h2 class="section-title">Contact me</h2>
+
+      <div class="contact bd-grid">
+        <div class="contact__content bd-grid">
+          <div class="contact__box">
+            <i class="bx bx-home contact__icon"></i>
+            <h3 class="contact__title">Location</h3>
+            <span class="contact__description">24 Heather Road, Liverpool, UK</span>
           </div>
-
-          <div class="services__data">
-            <i class="bx bx-laptop services__icon"></i>
-            <h3 class="services__title">DEF</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
-            <a href="#" class="button">Learn more</a>
+          <div class="contact__box">
+            <i class="bx bx-phone contact__icon"></i>
+            <h3 class="contact__title">Phone</h3>
+            <span class="contact__description">020 789 1011</span>
           </div>
-
-          <div class="services__data">
-            <i class="bx bx-pen services__icon"></i>
-            <h3 class="services__title">GHI</h3>
-            <p class="services__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, ea!</p>
-            <a href="#" class="button">Learn more</a>
+          <div class="contact__box">
+            <i class="bx bx-envelope contact__icon"></i>
+            <h3 class="contact__title">Email</h3>
+            <span class="contact__description">info@hotmail.co.uk</span>
           </div>
+          <div class="contact__box">
+            <i class="bx bx-time-five contact__icon"></i>
+            <h3 class="contact__title">Availability</h3>
+            <span class="contact__description">Mon-Fri 9am to 5pm</span>
+          </div>
+          <!-- <div class="contact__box">
+            <i class="bx bx-chat contact__icon"></i>
+            <h3 class="contact__title">Chat</h3>
+            <div>
+              <a href="#" class="contact__social"><i class="bx bxl-whatsapp-square"></i></a>
+            </div>
+          </div> -->
+
         </div>
-      </section>
-    </main>
 
-    <!-- -------------------------------- FAQ --------------------------------- -->
-    <!-- <section class="faq-section">
+        <form action="" class="contact__form">
+          <div class="contact__inputs">
+            <input type="text" placeholder="" class="contact__input">
+          </div>
+        </form>
+
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- -------------------------------- FAQ --------------------------------- -->
+
+  <section class="faqs section bd-container" id='faqs'>
+    <span class="section-subtitle">Have a question?</span>
+    <h2 class="section-title">FAQs</h2>
+
+    <div class="faq__container bd-grid">
+
       <div class="accordion">
-        <div class="accordion-item">
-          <button id="accordion-button-1" aria-expanded="false">
-            <span class="accordion-title"
-              >Why is the moon sometimes out during the day?</span
-            ><span class="icon" aria-hidden="true"></span>
+        <div class="faq__item">
+          <button id="" aria-expanded="false">
+            <p class="faq__title">Why is the moon sometimes out during the day?</p><span class="faq__icon"
+              aria-hidden="true"></span>
           </button>
-          <div class="accordion-content">
-            <p>
+          <div class="faq__content">
+            <p class="faq__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
@@ -163,74 +252,55 @@
             </p>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="faq__item">
+          <button id="" aria-expanded="false">
+            <p class="faq__title">Why is the moon sometimes out during the day?</p><span class="faq__icon"
+              aria-hidden="true"></span>
+          </button>
+          <div class="faq__content">
+            <p class="faq__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
+              suspendisse potenti.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="accordion-item">
           <button id="accordion-button-2" aria-expanded="false">
             <span class="accordion-title">Why is the sky blue?</span
             ><span class="icon" aria-hidden="true"></span>
           </button>
           <div class="accordion-content">
-            <p>
+            <p class="faq__description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
               suspendisse potenti.
             </p>
           </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordion-button-3" aria-expanded="false">
-            <span class="accordion-title">Will we ever discover aliens?</span
-            ><span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-              suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordion-button-4" aria-expanded="false">
-            <span class="accordion-title">How much does the Earth weigh?</span
-            ><span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-              suspendisse potenti.
-            </p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <button id="accordion-button-5" aria-expanded="false">
-            <span class="accordion-title">How do airplanes stay up?</span
-            ><span class="icon" aria-hidden="true"></span>
-          </button>
-          <div class="accordion-content">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra
-              suspendisse potenti.
-            </p>
-          </div>
-        </div>
+        </div> -->
+
+
       </div>
+
+
+  </section>
+
+  <!-- <section class="faq-section">
+
     </section> -->
 
-    <!-- -------------------------------- Footer --------------------------------- -->
+  <!-- -------------------------------- Footer --------------------------------- -->
 
-    <!-- Mixitup Filter -->
-    <script src=""></script>
+  <!-- Mixitup Filter -->
+  <script src=""></script>
 
-    <!-- Swiper JS -->
-    <script src=""></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper-bundle.min.js"></script>
 
-    <!-- Custom JS -->
-    <script type="text/JavaScript" src="js/script.js"></script>
-  </body>
+  <!-- Custom JS -->
+  <script type="text/JavaScript" src="js/script.js"></script>
+</body>
+
 </html>
