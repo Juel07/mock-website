@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
-  <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css"/>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css" />
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
   <title>Mock website</title>
 </head>
 
@@ -161,7 +163,6 @@
 
       <div class="testimonial__container swiper-container">
         <div class="swiper-wrapper">
-
           <div class="testimonial__content swiper-slide">
             <!-- <img src="" alt="" class="testimonial__img"> -->
             <i class='bx bx-chat testimonial__icon'></i>
@@ -189,11 +190,9 @@
             <p class="testimonial__description">I found him to be extremely personable yet professional at the same
               time. I felt at ease and felt he had a good understanding of my difficulties.</p>
           </div>
-
         </div>
 
         <div class="swiper-pagination"></div>
-
       </div>
     </section>
 
@@ -204,7 +203,6 @@
       <h2 class="section-title">FAQs</h2>
 
       <div class="faq__container bd-grid">
-
         <div class="accordion">
           <div class="faq__item">
             <button id="" aria-expanded="false">
@@ -238,58 +236,41 @@
       <span class="section-subtitle">Get in touch</span>
       <h2 class="section-title">Contact me</h2>
 
-      <div class="contact__para">
-        Book a free consultation now. You can also call, email or schedule and
-        appointment with me by completing the form below.
-        Feel free to call me for a chat to see how I might help you and to find out more about how my approch works.
-        I'd be happy to answer any questions you may have.
-      </div>
-      <div class="contact__container bd-grid">
+      <div class="contact_container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
 
-        <form action="" class="contact__form">
-          <div class="contact__inputs">
-            <label for="name">Name:</label>
-            <input type="text" placeholder="For eg. Jane Doe" class="contact__input" id='name' required>
-            <label for="email">Email:</label>
-            <input type="text" placeholder="For eg. example@gmail.com" class="contact__input" id='email' required>
-            <label for="subject">Subject:</label>
-            <input type="text" placeholder="For eg. General Enquiry" class="contact__input" id='subject' required>
-            <label for="msg">Message:</label>
-            <textarea name="form-message" cols="0" rows="7" placeholder="" id='msg' class="contact__input"
-              required></textarea>
-          </div>
-          <input type="submit" value="Send Message" class="button contact__button">
-        </form>
-
-        <div class="contact__content bd-grid">
-          <div class="contact__box">
-            <i class='bx bx-location-plus contact__icon' ></i>
-            <h3 class="contact__title">Location</h3>
-            <span class="contact__description">24 Heather Road, Liverpool, UK</span>
-          </div>
-          <div class="contact__box">
-            <i class="bx bx-phone contact__icon"></i>
-            <h3 class="contact__title">Phone</h3>
-            <span class="contact__description">020 789 1011</span>
-          </div>
-          <div class="contact__box">
-            <i class="bx bx-envelope contact__icon"></i>
-            <h3 class="contact__title">Email</h3>
-            <span class="contact__description">info@hotmail.co.uk</span>
-          </div>
-          <div class="contact__box">
-            <i class="bx bx-time-five contact__icon"></i>
-            <h3 class="contact__title">Availability</h3>
-            <span class="contact__description">Mon-Fri 9am to 5pm</span>
-          </div>
-          <!-- <div class="contact__box">
-            <i class="bx bx-chat contact__icon"></i>
-            <h3 class="contact__title">Chat</h3>
-            <div>
-              <a href="#" class="contact__social"><i class="bx bxl-whatsapp-square"></i></a>
+            <h3 class="contact__subheading">SGP</h3>
+            <div class="contact__para">
+              Book a free consultation now. You can also call, email or schedule and
+              appointment with me by completing the form below.
+              Feel free to call me for a chat to see how I might help you and to find out more about how my approch
+              works.
+              I'd be happy to answer any questions you may have.
             </div>
-          </div> -->
+            <ul>
+              <li><i class="icon ion-md-pin contact__icon"></i>24 Heather Road, Liverpool, UK</li>
+              <li><i class="icon ion-md-call contact__icon"></i>020 789 2021</li>
+              <li><i class="icon ion-md-mail contact__icon"></i>text@hotmail.co.uk</li>
+              <li><i class="icon ion-md-time contact__icon"></i>Mon-Fri 9am to 5pm</li>
+            </ul>
+          </div>
 
+          <div class="contact_form">
+            <h3 class="contact__subheading">Form</h3>
+            <form action="">
+              <label for="name">Name:</label>
+              <input type="text" placeholder="For eg. Jane Doe" id='name' class="form__input" required>
+              <label for="email">Email:</label>
+              <input type="text" placeholder="For eg. example@gmail.com" id='email' class="form__input" required>
+              <label for="subject">Subject:</label>
+              <input type="text" placeholder="For eg. General Enquiry" id='subject' class="form__input" required>
+              <label for="msg">Message:</label>
+              <textarea name="form-message" cols="0" rows="7" placeholder="" id='msg' class="form__input"
+                required></textarea>
+              <input type="submit" value="Send Message" class="button contact__button">
+            </form>
+          </div>
         </div>
       </div>
     </section>
