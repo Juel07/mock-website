@@ -66,7 +66,6 @@ const swiper = new Swiper('.testimonial__container', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    // dynamicBullets: true,
   },
   breapoints: {
     640: {
