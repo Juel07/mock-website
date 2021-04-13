@@ -488,7 +488,7 @@ img {
   width: 22px;
   height: 22px;
   border: 2px solid;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 .accordion button .faq__icon::before {
   /* - */
