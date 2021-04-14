@@ -612,7 +612,7 @@ img {
 .contact_form .form__input {
   width: 100%;
   padding: var(--mb-2);
-  border: 2px solid var(--text-color);
+  border: 2px solid var(--light-text-color);
   color: var(--text-color);
   border-radius: var(--border-rd);
   margin-bottom: var(--mb-1);
@@ -623,6 +623,9 @@ img {
 .form__input::placeholder {
   color: var(--light-text-color);
   font-family: var(--body-font);
+}
+.form__input:focus {
+  border-color: var(--secondary-color);
 }
 
 .contact__button  {
