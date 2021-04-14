@@ -3,10 +3,10 @@
 :root {
   --header-height: 3rem;
   --primary-color: #f7f3ea;
+  --secondary-color: #0c8894;
+  --tertiary-color: #fdfdfd;
   --text-color: #333333;
   --light-text-color: #868686;
-  --secondary-color: #0c8894;
-  --background-color: #fdfdfd;
 
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2.5rem;
@@ -57,7 +57,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  background-color: var(--background-color);
+  background-color: var(--tertiary-color);
   color: var(--text-color);
   min-height: 100vh;
   line-height: 1.6;
@@ -205,7 +205,7 @@ img {
 /* -------------------------------- change bg header --------------------------------- */
 
 .scroll-header {
-  background-color: var(--background-color);
+  background-color: var(--tertiary-color);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -216,7 +216,7 @@ img {
 }
 
 .scroll-header .nav__menu {
-  background-color: var(--background-color);
+  background-color: var(--tertiary-color);
 }
 
 /* -------------------------------- Scroll to top --------------------------------- */
@@ -238,7 +238,7 @@ img {
 
 .scrolltop__icon {
   font-size: 2rem;
-  color: var(--background-color);
+  color: var(--tertiary-color);
 }
 
 .show-scroll {
@@ -318,7 +318,7 @@ img {
   display: inline-block;
   font-family: var(--body-font);
   background-color: var(--secondary-color);
-  color: var(--background-color);
+  color: var(--tertiary-color);
   padding: 0.75rem 1rem;
   border: 2px solid var(--secondary-color);
   border-radius: var(--border-rd);
@@ -360,12 +360,12 @@ img {
 
 .services .section-subtitle,
 .services .section-title {
-  color: var(--background-color);
+  color: var(--tertiary-color);
 }
 
 .services__data {
   padding: 3rem 1rem;
-  background-color: var(--background-color);
+  background-color: var(--tertiary-color);
   border-radius: var(--border-rd);
   text-align: center;
   transition: 0.4s;
@@ -633,7 +633,7 @@ img {
 
 footer {
   background-color: var(--text-color);
-  color: var(--background-color);
+  color: var(--tertiary-color);
   text-align: center;
 }
 
@@ -652,7 +652,7 @@ footer {
 }
 
 .footer__email a {
-  color: var(--background-color);
+  color: var(--tertiary-color);
 }
 
 .footer__email a,
@@ -780,6 +780,7 @@ footer {
 
   .contact__wrapper > * {
     flex: 1;
+    padding: 2em;
   }
 
   .contact__subheading,
@@ -787,7 +788,7 @@ footer {
     text-align: left;
   }
 
-  .contact__para{
+  .contact__para {
     text-align: left;
   }
 }
