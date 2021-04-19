@@ -6,7 +6,7 @@
   /* --primary-color: #ffedc4; */
   /* --secondary-color: #1c9fb7; */
   --secondary-color: #02A6DC;
-  --tertiary-color: #fdfdfd;
+  --tertiary-color: #fffffe;
   --text-color: #333333;
   --light-text-color: #868686;
 
@@ -356,6 +356,78 @@ img {
   justify-self: center;
   width: 220px;
   border-radius: var(--border-rd);
+}
+
+.tabinator input {
+  display: none;
+}
+.tabinator label {
+  box-sizing: border-box;
+  font-weight: 600;
+  display: inline-block;
+  padding: 15px 25px;
+  color: #999999;
+  margin-bottom: -1px;
+  margin-left: -1px;
+}
+.tabinator label:before {
+  content:'';
+  display:block;
+  width:100%;
+/*   height:15px; */
+  background-color:#fffffe;
+  position:absolute;
+  bottom:-11px;
+  left:0;
+  z-index:10;  
+}
+.tabinator label:hover {
+  color: #333;
+  cursor: pointer;
+}
+.tabinator input:checked + label {
+  position: relative;
+  color: #02A6DC;
+  background: #ECF9FF;
+  border-radius: 5px 5px 0 0;
+}
+.tabinator input:checked + label:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+#content1, #content2, #content3, #content4 {
+  display: none;
+  padding: 15px;
+}
+
+.tabinator__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tabinator__list > * {
+  padding: .5rem;
+}
+
+.tabinator__list li::before {
+  display: inline-block;
+  content: '';
+  -webkit-border-radius: 50%;
+  border-radius:50%;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: var(--secondary-color);
+}
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+  background-color: #ECF9FF
 }
 
 /* -------------------------------- services --------------------------------- */
