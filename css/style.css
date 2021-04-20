@@ -254,24 +254,27 @@ img {
 .home__container {
   background-image: url(/assets/images/bg-image-w.jpg);
   background-size: cover;
-  background-position: right top;
+  background-position: left top;
+  /* min-height: calc(100vh + var(--header-height)); */
+  min-height: 100vh;
   /* display: flex;
   flex-direction: column-reverse; */
   /* height: calc(100vh - var(--header-height)); */
-  height: 100vh;
 }
 .home__container > * {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
 }
 .home__data {
-  padding-top: 25%;
+  margin: 25% 10%;
+  padding: 0.5rem;
+  border-radius: var(--border-rd);
   text-align: center;
   z-index: var(--z-tooltip);
   background-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
 }
 .home__heading {
   font-size: var(--biggest-font-size);
@@ -282,8 +285,25 @@ img {
   padding: 0 0 1.5rem;
 }
 
-.home__date .button {
-  font-size: var(--normal-font-size);
+.home__button {
+  font-size: var(--small-font-size);
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  transition: all 0.5s;
+  margin: 5px;
+}
+.home__button span:after {
+  content: "\2192";
+  /* font-size: 20px; */
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.home__button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 /* .home__img img{
   margin: 2rem 0;
@@ -308,26 +328,6 @@ img {
 }
 .button:hover span {
   padding-right: 25px;
-}
-
-.home__button {
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  transition: all 0.5s;
-  margin: 5px;
-}
-.home__button span:after {
-  content: "\2192";
-  /* font-size: 20px; */
-  position: absolute;
-  opacity: 0;
-  bottom: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-.home__button:hover span:after {
-  opacity: 1;
-  right: 0;
 }
 
 /* .button {
@@ -867,6 +867,9 @@ footer {
     flex-direction: row;
   }
 
+  .home__data{
+    margin: 20% 5%;
+  }
   .home .button {
     font-size: var(--normal-font-size);
   }
