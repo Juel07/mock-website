@@ -389,6 +389,11 @@ img {
   border-radius: var(--border-rd);
 }
 
+.about__subsection span{
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h3-font-size);
+}
+
 .tabinator input {
   display: none;
 }
@@ -467,7 +472,7 @@ img {
   background-color: #ecf9ff;
 }
 
-/* -------------------------------- services --------------------------------- */
+/* -------------------------------- get started --------------------------------- */
 .getstarted {
   /* background-color: var(--secondary-color); */
   padding: 4rem var(--mb-2) 2rem;
@@ -806,10 +811,14 @@ footer {
     width: 330px;
   }
 
-  .about__container,
   .qualification__container,
   .getstarted__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: row;
   }
 
   .contact__form {
@@ -883,8 +892,8 @@ footer {
     width: 440px;
   }
 
-  .about__description {
-    text-align: initial;
+  .about__data {
+    text-align: left;
   }
 
   .about__img {
@@ -920,7 +929,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  .services {
+  .getstarted {
     padding: 4rem var(--mb-3) 2rem;
   }
 }
