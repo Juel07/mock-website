@@ -22,8 +22,7 @@
   --icon-font-sm-size: 1.3rem;
   --icon-font-md-size: 2rem;
 
-  --box-shadow-1: 0px 2px 5px rgba(0, 0, 0, 20%); /*x y blur color*/
-
+  --box-shadow-1: 0px 4px 12px rgba(0, 0, 0, 0.08); /*x y blur color*/
   --border-rd: 0.25rem; /*border radius */
 
   --font-light: 300;
@@ -209,7 +208,7 @@ img {
 
 .scroll-header {
   background-color: var(--tertiary-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
 }
 
 .scroll-header .nav__logo,
@@ -293,12 +292,12 @@ img {
   margin: 5px;
 }
 .home__button span:after {
-  content: "\2192";
-  /* font-size: 20px; */
+  content: "\226B";
   position: absolute;
-  opacity: 0;
+  top: 0;
   bottom: 0;
   right: -20px;
+  opacity: 0;
   transition: 0.5s;
 }
 .home__button:hover span:after {
@@ -391,6 +390,8 @@ img {
   justify-self: center;
   width: 220px;
   border-radius: var(--border-rd);
+  margin-left: 10px;
+  box-shadow: -10px -10px var(--secondary-color);
 }
 
 .about__subsection span {
@@ -512,9 +513,7 @@ img {
   font-size: var(--icon-font-md-size);
   color: var(--secondary-color);
 }
-.getstarted__title {
-  font-size: var(--h3-font-size);
-}
+
 .getstarted__description {
   margin-bottom: var(--mb-4);
   font-size: var(--small-font-size);
@@ -844,6 +843,10 @@ footer {
     flex-direction: row;
   }
 
+  .about__data {
+    text-align: left;
+  }
+
   .contact__form {
     width: 450px;
     justify-self: center;
@@ -915,12 +918,8 @@ footer {
     width: 440px;
   }
 
-  .about__data {
-    text-align: left;
-  }
-
   .about__img {
-    width: 300px;
+    max-width: 300px;
     justify-self: left;
   }
 
