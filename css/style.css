@@ -373,6 +373,10 @@ img {
   text-align: center;
 }
 
+.about__data > *{
+  margin-bottom: var(--mb-3);
+}
+
 .about__description span {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
@@ -422,7 +426,7 @@ img {
   z-index: 10;
 }
 .tabinator label:hover {
-  color: #333;
+  color: var(--text-color);
   cursor: pointer;
 }
 .tabinator input:checked + label {
@@ -461,11 +465,11 @@ img {
 .tabinator__list li::before {
   display: inline-block;
   content: "";
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  -webkit-border-radius: 25%;
+  border-radius: 25%;
   height: 0.5rem;
   width: 0.5rem;
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
   background-color: var(--secondary-color);
 }
 #tab1:checked ~ #content1,
@@ -475,7 +479,7 @@ img {
   display: block;
   padding: 2rem 1rem;
   background-color: var(--primary-color);
-  border-radius: var(--border-rd);
+  border-radius: 0 var(--border-rd);
 }
 
 /* -------------------------------- get started --------------------------------- */
@@ -519,11 +523,14 @@ img {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 /* -------------------------------- testimonials --------------------------------- */
-.testimonial__content {
-  display: grid;
+.testimonial__container{
   background-color: var(--primary-color);
   color: var(--text-color);
   border-radius: var(--border-rd);
+}
+
+.testimonial__content {
+  display: grid;
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -674,6 +681,7 @@ img {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .contact__info {
