@@ -412,7 +412,7 @@ img {
   padding: 15px 25px;
   color: #999999;
   margin-bottom: -1px;
-  margin-left: -1px;
+  /* margin-left: -1px; */
 }
 .tabinator label:before {
   content: "";
@@ -433,7 +433,8 @@ img {
   position: relative;
   color: var(--secondary-color);
   background: var(--primary-color);
-  border-radius: 5px 5px 0 0;
+  border: none;
+  border-radius: var(--border-rd) var(--border-rd) 0 0;
 }
 .tabinator input:checked + label:after {
   display: block;
@@ -479,7 +480,7 @@ img {
   display: block;
   padding: 2rem 1rem;
   background-color: var(--primary-color);
-  border-radius: 0 var(--border-rd);
+  border-radius: 0 var(--border-rd) var(--border-rd);
 }
 
 /* -------------------------------- get started --------------------------------- */
