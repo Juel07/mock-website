@@ -252,7 +252,7 @@ img {
 /* -------------------------------- home --------------------------------- */
 
 .home__container {
-  background-image: url(assets/images/bg-image-w.jpg);
+  background-image: url(/assets/images/bg-image-w.jpg);
   background-size: cover;
   background-position: left top;
   /* min-height: calc(100vh + var(--header-height)); */
@@ -485,8 +485,8 @@ img {
 
 /* -------------------------------- get started --------------------------------- */
 .getstarted {
-  /* background-color: var(--secondary-color); */
-  padding: 4rem var(--mb-2) 2rem;
+  /* background-color: var(--secondary-color);
+  padding: 4rem var(--mb-2) 2rem; */
   color: var(--text-color);
 }
 
@@ -780,16 +780,16 @@ footer {
 }
 
 .footer__container {
-  padding: 2rem 0;
+  padding: 2rem 0 1em;
 }
 
 .footer__title {
-  font-size: var(--h1-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
 }
 .footer__description {
-  /* font-size: 16px; */
+  font-size: var(--small-font-size);
   font-weight: var(--font-light);
 }
 
@@ -947,7 +947,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  .getstarted {
+  /* .getstarted {
     padding: 4rem var(--mb-3) 2rem;
-  }
+  } */
 }
