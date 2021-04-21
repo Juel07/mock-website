@@ -252,7 +252,7 @@ img {
 /* -------------------------------- home --------------------------------- */
 
 .home__container {
-  background-image: url(/assets/images/bg-image-w.jpg);
+  background-image: url(assets/images/bg-image-w.jpg);
   background-size: cover;
   background-position: left top;
   /* min-height: calc(100vh + var(--header-height)); */
@@ -539,11 +539,12 @@ img {
 .testimonial__icon {
   font-size: var(--icon-font-md-size);
   color: var(--secondary-color);
+  margin-bottom: var(--mb-3);
 }
 
 .testimonial__client {
   font-size: var(--small-font-size);
-  color: var(--text-color);
+  color: var(--light-text-color);
   margin-bottom: var(--mb-2);
 }
 
@@ -781,7 +782,21 @@ footer {
 .footer__description {
   /* font-size: 16px; */
   font-weight: var(--font-light);
-  margin-bottom: var(--mb-3);
+}
+
+.footer__social{
+  margin-bottom: var(--mb-6);
+}
+
+.footer__link{
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin: 0 var(--mb-1);
+  transition: .3s;
+}
+
+.footer__link:hover{
+  color: var(--secondary-color);
 }
 
 .footer__email a {
