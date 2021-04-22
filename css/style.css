@@ -251,7 +251,7 @@ img {
 /* -------------------------------- home --------------------------------- */
 
 .home__container {
-  background-image: url('./assets/images/landing-image.jpg');
+  background: url(/assets/images/landing-image.jpg);
   background-size: cover;
   background-position: left top;
   min-height: 100vh;
