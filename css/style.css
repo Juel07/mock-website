@@ -251,10 +251,10 @@ img {
 /* -------------------------------- home --------------------------------- */
 
 .home__container {
-  background: url(/assets/images/landing-image.jpg);
+  /* background-image: url("./landing-image.jpg");
   background-size: cover;
   background-position: left top;
-  min-height: 100vh;
+  min-height: 100vh; */
   /* display: flex;
   flex-direction: column-reverse; */
   /* height: calc(100vh - var(--header-height)); */

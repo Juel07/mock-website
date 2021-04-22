@@ -58,7 +58,15 @@
     <!-- -------------------------------- Home --------------------------------- -->
 
     <section class="home" id="home">
-      <div class="home__container bd-grid">
+      <style>
+        #test {
+          background-image: url("./landing-image.jpg");
+          background-size: cover;
+          background-position: left top;
+          min-height: 100vh;
+        }
+      </style>
+      <div id="test" class="home__container bd-grid">
         <div class="home__data">
           <h1 class="home__heading">
             Psychotherapy Trafford
@@ -364,7 +372,8 @@
             <label for="msg">Message:</label>
             <textarea name="form-message" cols="0" rows="7" placeholder="" id='msg' class="form__input"
               required></textarea>
-              <p class="form__declaration">By clicking on 'submit', you agree to send your contact information to Psychotherapy Trafford.</p>
+            <p class="form__declaration">By clicking on 'submit', you agree to send your contact information to
+              Psychotherapy Trafford.</p>
             <input type="submit" value="Submit" class="button form__button">
           </form>
         </div>
