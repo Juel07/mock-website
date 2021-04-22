@@ -3,8 +3,6 @@
 :root {
   --header-height: 3rem;
   --primary-color: #ecf9ff;
-  /* --primary-color: #ffedc4; */
-  /* --secondary-color: #1c9fb7; */
   --secondary-color: #02a6dc;
   --tertiary-color: #fffffe;
   --text-color: #333333;
@@ -301,10 +299,6 @@ img {
   opacity: 1;
   right: 0;
 }
-/* .home__img img{
-  margin: 2rem 0;
-  width: 250px;
-} */
 
 /* -------------------------------- buttons --------------------------------- */
 
@@ -325,44 +319,6 @@ img {
 .button:hover span {
   padding-right: 25px;
 }
-
-/* .button {
-  display: inline-block;
-  letter-spacing: 1px;
-  background-color: var(--tertiary-color);
-  color: var(--secondary-color);
-  padding: 0.75rem 1rem;
-  border: 2px solid var(--tertiary-color);
-  border-radius: var(--border-rd);
-  text-align: center;
-  position: relative;
-  text-decoration: none;
-  min-width: 250px;
-  overflow: hidden;
-} */
-
-/* .button .effect-1 {
-  transition: all 0.2s linear 0s;
-  content: "\e00d";
-  font-family: FontAwesome;
-  font-size: 15px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  height: 100%;
-  width: 40px;
-}
-.button .effect-1:hover{
-  text-indent: -20px;#
-}
-.button .effect-1:hover::before{
-  opacity: 1;
-  text-indent: 0px;
-} */
 
 /* -------------------------------- about --------------------------------- */
 .about__data {
@@ -483,8 +439,6 @@ img {
 
 /* -------------------------------- get started --------------------------------- */
 .getstarted {
-  /* background-color: var(--secondary-color);
-  padding: 4rem var(--mb-2) 2rem; */
   color: var(--text-color);
 }
 
@@ -738,9 +692,6 @@ footer {
 /* -------------------------------- media queries --------------------------------- */
 
 @media screen and (min-width: 576px) {
-  /* .home__img img {
-    width: 330px;
-  } */
 
   .qualification__container,
   .getstarted__container {
@@ -776,11 +727,6 @@ footer {
   body {
     margin: 0;
   }
-
-  /* .section-title,
-  .section-subtitle {
-    text-align: left;
-  } */
 
   .section {
     padding: 6rem 0 4rem;
@@ -845,7 +791,4 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-  /* .getstarted {
-    padding: 4rem var(--mb-3) 2rem;
-  } */
 }
