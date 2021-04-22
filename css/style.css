@@ -101,7 +101,7 @@ img {
 
 .section-title,
 .section-subtitle {
-  text-align: center;
+  text-align: left;
 }
 
 .section-title {
@@ -251,14 +251,14 @@ img {
 /* -------------------------------- home --------------------------------- */
 
 .home__container {
-  background-image: url(/assets/images/bg-image-w.jpg);
+  background-image: url(/assets/images/landing-image.jpg);
   background-size: cover;
   background-position: left top;
-  /* min-height: calc(100vh + var(--header-height)); */
   min-height: 100vh;
   /* display: flex;
   flex-direction: column-reverse; */
   /* height: calc(100vh - var(--header-height)); */
+  /* min-height: calc(100vh + var(--header-height)); */
 }
 .home__container > * {
   display: flex;
@@ -360,7 +360,7 @@ img {
   width: 40px;
 }
 .button .effect-1:hover{
-  text-indent: -20px;
+  text-indent: -20px;#
 }
 .button .effect-1:hover::before{
   opacity: 1;
@@ -369,10 +369,10 @@ img {
 
 /* -------------------------------- about --------------------------------- */
 .about__data {
-  text-align: center;
+  text-align: left;
 }
 
-.about__data > *{
+.about__data > * {
   margin-bottom: var(--mb-3);
 }
 
@@ -387,7 +387,7 @@ img {
 }
 
 .about__img {
-  justify-self: center;
+  justify-self: left;
   width: 220px;
   border-radius: var(--border-rd);
   margin-left: 10px;
@@ -399,7 +399,7 @@ img {
   font-size: var(--h3-font-size);
 }
 
-.about__container{
+.about__container {
   margin-bottom: 2rem;
 }
 
@@ -523,7 +523,7 @@ img {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
 }
 /* -------------------------------- testimonials --------------------------------- */
-.testimonial__container{
+.testimonial__container {
   background-color: var(--primary-color);
   color: var(--text-color);
   border-radius: var(--border-rd);
@@ -670,10 +670,6 @@ img {
 
 /* -------------------------------- contact --------------------------------- */
 
-.contact {
-  padding: 0.5rem;
-}
-
 .contact__wrapper {
   /* box-shadow: var(--box-shadow-1); */
   border-radius: var(--border-rd);
@@ -691,7 +687,7 @@ img {
 
 .contact__subheading,
 .contact__info ul {
-  text-align: center;
+  text-align: left;
   margin: 0 0 var(--mb-2) 0;
 }
 
@@ -719,7 +715,7 @@ img {
 }
 
 .contact__para {
-  text-align: center;
+  text-align: left;
   font-weight: var(--font-regular);
   margin-bottom: var(--mb-2);
 }
@@ -746,7 +742,7 @@ img {
   border-radius: var(--border-rd);
   margin-bottom: var(--mb-1);
   font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  /* font-size: var(--small-font-size); */
 }
 
 .form__input::placeholder {
@@ -757,12 +753,19 @@ img {
   border-color: var(--secondary-color);
 }
 
+.form__declaration {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-regular);
+}
+
 .form__button {
   cursor: pointer;
+  width: 50%;
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   border: 2px solid var(--secondary-color);
   transition: all 0.25s;
+  margin-top: 1rem;
 }
 
 .form__button:hover {
@@ -792,18 +795,18 @@ footer {
   font-weight: var(--font-light);
 }
 
-.footer__social{
+.footer__social {
   margin-bottom: var(--mb-6);
 }
 
-.footer__link{
-  font-size: 1.4rem;
+.footer__link {
+  font-size: var(--icon-font-md-size);
   color: var(--primary-color);
   margin: 0 var(--mb-1);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.footer__link:hover{
+.footer__link:hover {
   color: var(--secondary-color);
 }
 
@@ -849,7 +852,7 @@ footer {
 
   .contact__form {
     width: 450px;
-    justify-self: center;
+    justify-self: left;
   }
 }
 
@@ -868,11 +871,10 @@ footer {
     margin: 0;
   }
 
-  .section-title,
-  .section-subtitle,
-  .contact p {
+  /* .section-title,
+  .section-subtitle {
     text-align: left;
-  }
+  } */
 
   .section {
     padding: 6rem 0 4rem;
@@ -898,7 +900,7 @@ footer {
     display: none;
   }
   .home__container {
-    height: 100vh;
+    /* height: 100vh; */
     flex-direction: row;
   }
 
@@ -929,15 +931,6 @@ footer {
 
   .contact__wrapper {
     flex-direction: row;
-  }
-
-  .contact__subheading,
-  .contact__info ul {
-    text-align: left;
-  }
-
-  .contact__para {
-    text-align: left;
   }
 }
 
