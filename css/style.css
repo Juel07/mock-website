@@ -281,7 +281,7 @@ img {
   font-size: var(--biggest-font-size);
 }
 .home__subheading {
-  font-size: var(--h1-font-size);
+  font-size: var(--h2-font-size);
   font-weight: var(--font-regular);
   padding: 0 0 1.5rem;
 }
@@ -371,12 +371,11 @@ img {
 }
 .tabinator label {
   box-sizing: border-box;
-  font-weight: 600;
+  font-weight: var(--font-semi-bold);
   display: inline-block;
   padding: 15px 25px;
   color: #999999;
   margin-bottom: -1px;
-  /* margin-left: -1px; */
 }
 .tabinator label:before {
   content: "";
@@ -490,7 +489,6 @@ img {
 /* -------------------------------- testimonials --------------------------------- */
 .testimonial__container {
   background-color: var(--primary-color);
-  color: var(--text-color);
   border-radius: var(--border-rd);
 }
 
