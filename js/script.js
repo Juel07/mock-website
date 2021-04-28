@@ -12,7 +12,7 @@ const toggleMenu = (toggleId, navId) => {
 toggleMenu('nav-toggle', 'nav-menu')
 
 // remove mobile menu
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav-link')
 
 function linkAction() {
   const navMenu = document.getElementById('nav-menu')
@@ -31,9 +31,9 @@ function scrollActive() {
     sectionId = current.getAttribute('id')
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
     } else {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
 
     }
   })
@@ -61,7 +61,7 @@ function scrollTop() {
 window.addEventListener('scroll', scrollTop)
 
 // swiper carousel
-const swiper = new Swiper('.testimonial__container', {
+const swiper = new Swiper('.testimonial-container', {
 
   spaceBetween: 16,
   loop: true,
