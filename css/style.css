@@ -366,6 +366,14 @@ img {
   margin-bottom: 2rem;
 }
 
+fieldset{
+  border: none;
+}
+
+legend {
+  display: none;
+}
+
 .tabinator input {
   display: none;
 }
