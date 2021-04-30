@@ -268,8 +268,7 @@
             Schedule a free 20 minute phone consultation today. I look forward to hearing from you.
           </div>
           <form action="https://formsubmit.co/traffordpsychotherapy@gmail.com" method="POST">
-            <input type="hidden" name="_autoresponse"
-              value="Thank you for contacting Trafford Psychotherapy. I will respond to you within 24-48 hours.">
+            <input type="hidden" name="_next" value="/thanks.html">
             <input type="hidden" name="_subject" value="New contact!">
             <div class="form-row">
               <span>
@@ -290,12 +289,11 @@
               </span>
               <span>
                 <label for="subject">Subject:</label>
-                <input type="text" name="subject" placeholder="For eg. General Enquiry" id='subject' class="form-input"
-                  required>
+                <input type="text" name="subject" placeholder="For eg. General Enquiry" id='subject' class="form-input">
               </span>
             </div>
             <label for="msg">Message:</label>
-            <textarea name="message" cols="0" rows="7" placeholder="" id='msg' class="form-input" required></textarea>
+            <textarea name="message" cols="0" rows="7" placeholder="" id='msg' class="form-input"></textarea>
             <p class="form-declaration">By clicking on 'submit', you agree to send your contact information to
               Psychotherapy Trafford.</p>
             <input type="submit" value="Submit" class="button form-button">
