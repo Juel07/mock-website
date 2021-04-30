@@ -6,7 +6,7 @@
   --secondary-color: #02a6dc;
   --tertiary-color: #fffffe;
   --text-color: #333333;
-  --light-text-color: #868686;
+  --light-text-color: #999999;
 
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
@@ -391,10 +391,13 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+.about-description, .about-subsection, .tabinator p{
+  font-weight: var(--font-regular);
+}
+
 .about-description span {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--text-color);
 }
 
 .about-number {
@@ -434,7 +437,7 @@ legend {
   font-weight: var(--font-semi-bold);
   display: inline-block;
   padding: 15px 25px;
-  color: #999999;
+  color: var(--light-text-color);
   margin-bottom: -1px;
 }
 .tabinator label:before {
@@ -539,6 +542,7 @@ legend {
 .getstarted-description {
   margin-bottom: var(--mb-4);
   font-size: var(--small-font-size);
+  font-weight: var(--font-regular);
 }
 .getstarted-data:hover {
   transform: translateY(-0.5rem);
@@ -559,12 +563,16 @@ legend {
   text-align: center;
 }
 
-.testimonial-img {
+/* .testimonial-img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   justify-self: center;
   margin-bottom: var(--mb-1);
+} */
+
+.testimonial-description{
+  font-weight: var(--font-regular);
 }
 
 .testimonial-icon {
@@ -648,8 +656,11 @@ legend {
 
 .contact-para {
   text-align: left;
-  font-weight: var(--font-regular);
   margin-bottom: var(--mb-2);
+}
+
+.contact-info, .contact-para, .form-declaration{
+  font-weight: var(--font-regular);
 }
 
 .contact-form {
@@ -693,13 +704,13 @@ legend {
 
 .form-declaration {
   font-size: var(--smaller-font-size);
-  font-weight: var(--font-regular);
 }
 
 .form-button {
   cursor: pointer;
   width: 50%;
   background-color: var(--secondary-color);
+  text-transform: uppercase;
   color: var(--tertiary-color);
   border: 2px solid var(--secondary-color);
   transition: all 0.3s;
