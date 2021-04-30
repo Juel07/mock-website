@@ -267,30 +267,35 @@
           <div class="contact-para">
             Schedule a free 20 minute phone consultation today. I look forward to hearing from you.
           </div>
-          <form action="" method="post">
+          <form action="https://formsubmit.co/traffordpsychotherapy@gmail.com" method="POST">
+            <input type="hidden" name="_autoresponse"
+              value="Thank you for contacting Trafford Psychotherapy. I will respond to you within 24-48 hours.">
+            <input type="hidden" name="_subject" value="New contact!">
             <div class="form-row">
               <span>
                 <label for="name">Name:</label>
-                <input type="text" placeholder="For eg. Jane Doe" id='name' class="form-input" required>
+                <input type="text" name="name" placeholder="For eg. Jane Doe" id='name' class="form-input" required>
               </span>
               <span>
                 <label for="email">Email:</label>
-                <input type="email" placeholder="For eg. example@gmail.com" id='email' class="form-input" required>
+                <input type="email" name="email" placeholder="For eg. example@gmail.com" id='email' class="form-input"
+                  required>
               </span>
             </div>
             <div class="form-row">
               <span>
                 <label for="number">Phone no:</label>
-                <input type="number" placeholder="For eg. 07XX XXX XXXX" id='number' class="form-input" required>
+                <input type="number" name="number" placeholder="For eg. 07XX XXX XXXX" id='number' class="form-input"
+                  required>
               </span>
               <span>
                 <label for="subject">Subject:</label>
-                <input type="text" placeholder="For eg. General Enquiry" id='subject' class="form-input" required>
+                <input type="text" name="subject" placeholder="For eg. General Enquiry" id='subject' class="form-input"
+                  required>
               </span>
             </div>
             <label for="msg">Message:</label>
-            <textarea name="form-message" cols="0" rows="7" placeholder="" id='msg' class="form-input"
-              required></textarea>
+            <textarea name="message" cols="0" rows="7" placeholder="" id='msg' class="form-input" required></textarea>
             <p class="form-declaration">By clicking on 'submit', you agree to send your contact information to
               Psychotherapy Trafford.</p>
             <input type="submit" value="Submit" class="button form-button">
