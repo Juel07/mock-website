@@ -321,13 +321,13 @@ img {
   flex-direction: column;
 }
 .home-data {
-  margin: 25% 5% 30%;
-  padding: 1rem 0.5rem;
+  padding: 2rem 0.5rem;
   border-radius: var(--border-rd);
   text-align: center;
   z-index: var(--z-tooltip);
-  background-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  background: -moz-linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1 );
 }
 .home-heading {
   font-size: var(--biggest-font-size);
@@ -870,9 +870,6 @@ footer {
     flex-direction: row;
   } */
 
-  .home-data {
-    margin: 20% 5%;
-  }
   .button {
     font-size: var(--normal-font-size);
   }
