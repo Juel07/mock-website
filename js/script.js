@@ -99,3 +99,8 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+// display current year on footer
+today =  new Date();
+year = today.getFullYear();
+document.querySelector(".footer-copy span").innerText = year;
